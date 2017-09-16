@@ -1,0 +1,289 @@
+/*Fonts*/
+
+@font-face {
+  font-family: 'ApercuPro';
+  src: url('fonts/ApercuPro.woff') format('woff'), 
+  url('fonts/ApercuPro.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+    font-family:'NeuzeitGroT';
+    src: url('fonts/NeuzeitGroT.woff2') format('woff2'),
+		url('fonts/NeuzeitGroT.woff') format('woff'),
+		url('fonts/NeuzeitGroT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+
+/*Media Queries*/
+
+@media all and (min-width: 960px) {
+    body{
+        font-size: 10px;
+    }
+}
+ 
+@media all and (max-width: 959px) and (min-width: 600px) {
+    body{
+        font-size: 8px;
+    }
+}
+ 
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+        font-size: 6px;
+    }
+ 
+}
+/*Aux*/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix {
+	content: "";
+
+	display: table;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+
+.debug {
+	border: 1px dashed red;
+}
+
+/*Common Styles*/
+
+body {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.background-1-wrapper {
+	background-color: #222222;
+}
+
+.background-2-wrapper {
+	background-color: #ffffff;
+}
+
+.p_20 {
+	padding: 20px;
+}
+
+h1, 
+h2,
+p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	color: #ffffff;
+	text-decoration: none;
+	outline: none;
+}
+
+button {
+	background: none;
+	border: none;
+	outline: none;	
+
+}
+
+/*Header*/
+
+.header-wrapper {
+	padding-bottom: 0;
+}
+
+.main-title {
+	width: 35%;
+
+	margin: 4.5em auto;
+	
+	font: 4em 'NeuzeitGroT';
+	line-height: 1.5em;
+	color: #ffffff;
+}
+
+.main-title #blink {
+	font-weight: 800;
+ 	text-shadow: 0 0 10px rgba(255,255,255, 1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px rgb(90, 232, 253) , 0 0 70px rgb(90, 232, 253) , 0 0 80px rgb(90, 232, 253) , 0 0 100px rgb(90, 232, 253) ;
+}
+
+.main-navbar_item {
+	float: left;
+
+	padding: 1em;
+	margin-right: 2em;
+
+	font: 2em 'ApercuPro';
+	color: #ffffff;
+}
+
+.main-navbar_item:hover {
+	background-color: #5ae8fd;
+	color: #222222;
+}
+
+/*Info*/
+
+.info-container {
+	width: 60%;
+
+	margin-bottom: 20px;
+}
+
+.info-container:nth-child(2) {
+	margin: 0 auto 20px auto;
+}
+
+.info-header {
+	width: 30%;
+	float: left;	
+
+	margin-right: 40%;
+
+	font: 3em 'NeuzeitGroT';
+	background-color: #29fca5;
+}
+
+.info-content {
+	width: 60%;
+	float: right;
+
+	font: 2.6em 'ApercuPro';
+	line-height: 2em;
+} 
+/*Portfolio*/
+
+.portfolio-wrapper {
+	padding-top: 0;
+}
+
+.portfolio-header {
+	margin: 0 2em 1.6em 0;
+
+	color: #ffffff;
+	font: 3em 'NeuzeitGroT';
+	line-height: 2.2em;
+}
+
+.portfolio-tab {
+	padding: 1em;
+	margin-right: 2em;
+	
+	font: 2em 'ApercuPro'; 
+	color: #ffffff;
+}
+
+.portfolio-tab:hover {
+	background-color: #5ae8fd;
+	color: #222222;
+}
+
+.portfolio-tab-content {
+	display: none;
+}
+
+.portfolio-tab-content.active {
+	content: "";
+
+	display: table;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+
+.portfolio-tab.active {
+	background-color: #5ae8fd;
+	color: #222222;
+}
+
+.portfolio_link {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+
+	margin-right: 50px;
+	margin-bottom: 50px;
+
+	transition: all 0.1s ease-out;
+}
+
+.portfolio_link:last-child {
+	margin-right: 0;
+}
+
+.portfolio_description {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	padding-top: 2em;
+	box-sizing: border-box;
+
+	text-align: center;
+	color: #000000;
+	opacity: 0;
+	font: 2.3em 'NeuzeitGroT';
+	background-color: #e9e9e9;
+}
+
+.portfolio_link:hover .portfolio_description {
+	opacity: 0.9;
+	transition: opacity 0.3s ease-out 0.2s;
+	-webkit-transition: opacity 0.3s ease-out 0.2s;
+}
+
+.codepen-api-wrapper {
+	float: left;
+	width: 40%;
+
+	margin-right: 20px;
+}
+
+/*Footer*/
+
+.footer-copyright {
+	width: 30%;
+	margin: 0 auto;
+
+	color: #000;
+	font: 1.8em 'ApercuPro';
+	line-height: 3.2em;
+}
+
+.footer-copyright span {
+	background-color: #000;
+}
+
+.footer-copyright span:hover {
+	background: none;
+}
