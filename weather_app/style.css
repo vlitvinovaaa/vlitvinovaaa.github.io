@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "NeuzeitGroT";
+  src:url('https://vlitvinovaaa.github.io/fonts/NeuzeitGroT.ttf');
+} 
+
+body {
+  font-family: 'NeuzeitGroT';
+  color: #e6e6e6;
+  background-color: #5a9ea8;
+}
+
+p {
+  margin: 0;
+  line-height: 1.8em;
+}
+
+.container-fluid {
+  padding: 0 50px;
+  font-size: 36px;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.weather-data-wrapper  {
+  font-size: 1em;
+}
+
+#dateTime {
+	font-weight: bold;
+}
+
+.temperature-wrapper {
+  float: left;
+  margin-right: 10px;
+}
+
+#todayTemp {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#minMax1 {
+	font-weight: bold;
+	font-size: 0.6em;
+  line-height: 0.6em;
+}
+
+#minMax2, #minMax3, #minMax4 {
+	font-weight: bold;
+	font-size: 0.6em;
+}
+

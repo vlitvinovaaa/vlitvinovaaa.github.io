@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Local Weather</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+	  <h1 class="text-center">What's the weather now?</h1>
+	  <div class="weather-data-wrapper row">
+	    <!-- Location -->
+	    <p id="location"></p>
+	    <!-- Date + Time -->
+	    <p id="dateTime"></p>
+	    <!--  Temperature -->
+	    <div class="temperature-wrapper">
+	    <p id="todayTemp"></p>
+	    <p id="minMax1"></p>
+	    </div>
+	    <!--   Icon -->
+	    <div id="icon1"></div>
+	  </div>
+	  <div class="input-wrapper text-center">
+			<div><input type="radio" name="degree" value="cel" checked> Celsius</div>
+			<div><input type="radio" name="degree" value="far"> Fahrenheit</div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
