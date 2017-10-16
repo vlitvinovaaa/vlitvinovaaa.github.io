@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "NeuzeitGroT";
+  src:url('https://vlitvinovaaa.github.io/fonts/NeuzeitGroT.ttf');
+} 
+
+body {
+  font-family: 'NeuzeitGroT';
+  color: #e6e6e6;
+  background-color: #9bbbc9;
+}
+
+.main-wrp {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 36px;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.weather-data-wrp  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: 1em "Orbitron";
+  margin: 2em 0;
+}
+
+.weather-data-wrp div {
+  width: 30%;
+  padding: 0.4em;
+  border-radius: 7px;
+  margin-right: 2em;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+div .icon {
+  font-family: weathericons;
+} 
+ 
+.temperature-wrp {
+  margin-right: 0;
+  background-color: #c75f57;
+}
+
+.temperature-wrp div {
+  padding: 0.2em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#location {
+  background-color: #f1cdaf;
+}
+
+#dateTime {
+  background-color: #46a197;
+}
+
+#todayTemp {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#minMax1 {
+  width: 70%;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+.input-wrp {
+  text-align: center;
+}
+
