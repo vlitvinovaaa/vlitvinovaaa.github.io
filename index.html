@@ -2,122 +2,473 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<title>Лабораторія Чокнутого Професора</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>hi, I'm Valeria</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<div class="background-1-wrapper">
-	<div class="header-wrapper clearfix">
-
-		<h1 class="main-title">hi
-			<br>I'm Valeria
-			<br>front-end developer in a daytime
-			<br>&amp; illustrator at night<span id="blink"> |</span>
-		</h1>
-
-		<nav class="main-navbar left">
-			<a href="#info" class="main-navbar_item">Info</a>
-			<a href="#portfolio" class="main-navbar_item">Portfolio</a>
-			<span class="main-navbar_item">vlitvinova95@gmail.com</span>
-			<a href="https://www.instagram.com/vlitvinovaaa/" class="main-navbar_item" target="_blank">
-				<span class="fa fa-instagram navbar_icon"></span>
-			</a>
-			<a href="https://www.behance.net/vlitvinova6f59" class="main-navbar_item" target="_blank">
-				<span class="fa fa-behance navbar_icon"></span>
-			</a>
-			<a href="https://www.linkedin.com/in/valeria-litvinova-a7221b149" class="main-navbar_item" target="_blank">
-				<span class="fa fa-linkedin navbar_icon"></span>
-			</a>
-		</nav>
+<!-- Header -->
+<header>
+	<div class="background-1-wrp background-wrp">
+	<div class="content-wrp clearfix">
+		<a href="#" class="logo"></a>
+		<button type="button" id="burger-btn" class="fa fa-bars"></button>
+		<button id="cross" class="fa fa-times"></button>
+		<ul class="main-menu">
+			<li class="main-menu_item"><a href="#about">Про лабораторію</a></li>
+			<li class="main-menu_item"><a href="#celebration">Свята</a></li>
+			<li class="main-menu_item"><a href="#calc">Калькулятор</a></li>
+			<li class="main-menu_item"><a href="#calendar">Шоу</a></li>
+			<li class="main-menu_item"><a href="#contact">Контакти</a></li>
+		</ul>
 	</div>
 	</div>
 
-	<div class="background-2-wrapper">
-	<div id="info" class="info-wrapper p_20 clearfix">
-
-		<div class="info-container right">
-			<h2 class="info-header">About me</h2>
-			<p class="info-content">Hi, my name is Valeria and my challenge is to obtain a position where I can further my career as a front-end developer, and utilize newest technologies to create intuitive, elegant, and cutting-edge user experiences.</p>
-		</div>
-
-		<div class="info-container clearfix">
-			<h2 class="info-header">Core Skills</h2>
-			<ul class="info-content info-list">
-				<li class="info-list_item">HTML5, CSS3</li>
-				<li class="info-list_item">SASS, LESS</li>
-				<li class="info-list_item">BEM, OOCSS</li>
-				<li class="info-list_item">jQuery, GULP</li>
-				<li class="info-list_item">Git</li> 
-				<li class="info-list_item">Adobe Photoshop</li>
-				<li class="info-list_item">Adobe Illustrator</li>
-			</ul>
-		</div>
-
-		<div class="info-container left">
-			<h2 class="info-header">Interests</h2>
-			<p class="info-content">
-				I'm passionate about art, web-design, street culture and cats. Also, I'm an Massive Attack fan and amateur photographer.
-			</p>
-		</div>
-	</div>
-	</div>
-
-	<div class="background-1-wrapper">
-	<div id="portfolio" class="portfolio-wrapper p_20">
-			<h2 class="portfolio-header left">Portfolio</h2>
-			<p class="portfolio-tabs-wrapper left">
-				<button type="button" class="portfolio-tab active" data-nav="0">HTML + CSS/Vanilla JS</button>
-				<button type="button" class="portfolio-tab" data-nav="1">jQuery/AJAX</button>
-			</p>
-
-			<div class=" clearfix portfolio-tab-content active" data-tab="0">
-
-				<a href="tajam/index.html" class="portfolio_link" target="_blank">
-					<span class="portfolio_description">Adaptive website with HTML5 videoplayer</span>
-					<img src="img/3.jpg" class="img-responsive portfolio_img">
-				</a>
-
-				<a href="take_phone/index.html" class="portfolio_link" target="_blank">
-					<span class="portfolio_description">Adaptive website with parallax technique</span>
-					<img src="img/2.jpg" class="img-responsive portfolio_img">
-				</a>
-
-				<a href="singolo/index.html" class="portfolio_link" target="_blank">
-					<span class="portfolio_description">Adaptive website with slider</span>
-					<img src="img/4.jpg" class="img-responsive portfolio_img">
-				</a>
-
-				<a href="uinity_fashion/index-home.html" class="portfolio_link" target="_blank">
-					<span class="portfolio_description">Multipage Website</span>
-					<img src="img/6.jpg" class="img-responsive portfolio_img">
-				</a>
+	<div class="background-2-wrp background-wrp">
+	<div class="content-wrp">
+		<div class="main-content">
+			<h1>Лабораторія Чокнутого Професора</h1>
+			<p>веселі та пізнавальні ігри для дітей</p>
+			<div class="more-btn-wrp">
+				<a href="#calc" class="btn">Дізнатися більше</a>
 			</div>
-
-			<div class="portfolio-tab-content" data-tab="1">
-				<a href="weather_app/index.html" class="portfolio_link" target="_blank">
-					<span class="portfolio_description">An application that shows forecast on your current location</span>
-					<img src="img/7.jpg" class="img-responsive portfolio_img">
-				</a>
-				
-				<a href="type_ahead/index.html" class="portfolio_link" target="_blank">
-					<span class="portfolio_description">AJAX Type Ahead</span>
-					<img src="img/8.jpg" class="img-responsive portfolio_img">
-				</a>
+		</div>
+		<div class="features-container">
+		<div class="features-wrp">
+			<div class="feature feature1">
+				<p class="feature-description">Безкоштовний вхід <br> у лабораторію <br> в День Народження</p>
+				<p class="feature-description feature-description-cont">для іменинника</p>
 			</div>
+			<div class="feature feature2">
+				<p class="feature-description">Безкоштовне розважальне<br> шоу <br> по вихідних днях</p>
+				<p class="feature-description feature-description-cont">Кожні вихідні проходить шоу, яке <br> входить у вартість вхідного квитка.</p>
+			</div>
+			<div class="feature feature3">
+				<p class="feature-description">Проводи <br> цікаво час <br> разом з нами</p>
+				<p class="feature-description feature-description-cont">Квиток для дитини коштує 145 гривень, для <br> дорослого 155</p>
+			</div>
+		</div>
+		</div>
 	</div>
 	</div>
-<!-- 
-	<div class="background-2-wrapper">
-	<div class="container-fluid">
-		<footer class="main-footer">
-			<p class="footer-copyright">Design, code and copy by: <span>who do you think?</span></p>
-		</footer>
+</header>
+<!-- /Header -->
+
+<!-- About -->
+	<div class="background-3-wrp section-wrp background-wrp" id="about">
+	<div class="content-wrp">
+		<div class="about-wrp">
+			<div class="mob-features-container">
+			<div class="mob-features-wrp">
+				<div class="feature feature1">
+					<p class="feature-description">Безкоштовний вхід <br> у лабораторію <br> в День Народження</p>
+					<p class="feature-description feature-description-cont">для іменинника</p>
+				</div>
+				<div class="feature feature2">
+					<p class="feature-description">Безкоштовне розважальне<br> шоу <br> по вихідних днях</p>
+					<p class="feature-description feature-description-cont">Кожні вихідні проходить шоу, яке <br> входить у вартість вхідного квитка.</p>
+				</div>
+				<div class="feature feature3">
+					<p class="feature-description">Проводи <br> цікаво час <br> разом з нами</p>
+					<p class="feature-description feature-description-cont">Квиток для дитини коштує 145 гривень, для <br> дорослого 155</p>
+				</div>
+				<!-- <button class="features-nav features-prev fa fa-angle-left"></button>
+				<button class="features-nav features-next fa fa-angle-right"></button> -->
+			</div>
+			</div>
+			<h2 class="section-header lab-header">Про лабораторію</h2>
+			<div class="lab-column">
+			<button type="button" class="lab-expand-btn">Читати більше</button>
+			<div class="lab-info">
+				<p class="section-description lab-description">Це комплекс атракціонів у Києві для всієї родини. Наш принцип — <br> «Розважайся і пізнавай».</p>
+				<p class="section-description lab-description">Ігрові експонати, комплекс <br> захоплюючих головоломок,<br> оптичних ілюзій, природних явищ<br> в мініатюрі.</p>
+				<p class="section-description lab-description">Можна торкатися усіх експонатів,<br> самостійно пізнавати світ науки.</p>
+			</div>
+			<div class="large-img-wrp">
+				<img id="large-img" src="img/photos/1.jpg">
+				<button class="img-nav nav-prev fa fa-angle-right"></button>
+				<button class="img-nav nav-next fa fa-angle-left"></button>
+			</div>
+			<div id="thumbs">
+				<a href="img/photos/1.jpg" class="active-img"><img class="thumbs-img" src="img/photos/1.jpg"></a>
+				<a href="img/photos/2.jpg"><img class="thumbs-img" src="img/photos/2.jpg"></a>
+				<a href="img/photos/3.jpg"><img class="thumbs-img" src="img/photos/3.jpg"></a>
+				<a href="img/photos/4.jpg"><img class="thumbs-img" src="img/photos/4.jpg"></a>
+				<a href="img/photos/5.jpg"><img class="thumbs-img" src="img/photos/5.jpg"></a>
+				<a href="img/photos/6.jpg"><img class="thumbs-img" src="img/photos/6.jpg"></a>
+			</div>
+		</div>
+		</div>
+		<div class="section-wrp go-wrp">
+			<div class="section-icon go-icon"></div>
+			<div class="go-info">
+				<h2 class="section-header go-header">Із ким іти до лабораторії?</h2>
+				<ul class="section-description go-list">
+					<li class="go-list_item">із сім'єю</li>
+					<li class="go-list_item">із однокласниками (1-8 клас)</li>
+					<li class="go-list_item">групою садочку (для старших груп)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section-wrp">
+			<div class="section-icon do-icon"></div>
+			<h2 class="section-header">Що можна робити в лабораторії?</h2>
+			<div class="section-description description-wrp">
+				<div class="description-item">
+					<div class="item-icon icon1"></div>
+					<span class="item-label">Проводити експерименти<br> в ігрових зонах</span>
+				</div>
+				<div class="description-item">
+					<div class="item-icon icon2"></div>
+					<span class="item-label">Вивчати закони фізики,<br> граючи</span>
+				</div>
+				<div class="description-item">
+					<div class="item-icon icon3"></div>
+					<span class="item-label">Святкувати<br> День народження</span>
+				</div>
+				<div class="description-item">
+					<div class="item-icon icon4"></div>
+					<span class="item-label">Брати участь<br> у наукових шоу</span>
+				</div>
+			</div>
+		</div>
+<!-- /About -->
+
+<!-- Celebration -->
+		<div class="section-wrp" id="celebration">
+			<h2 class="section-header celebr-section-header">Оберіть своє свято в лабораторії</h2>
+			<div class="celebr-item-wrp">
+				<figure class="celebr-item">
+					<img src="img/photos/8.jpg" class="celebr-img">
+					<figcaption class="celebr-description">
+						<p class="celebr-header">Свято для компанії
+							<span>шкільний клас, група садочку</span>
+						</p>
+						<p class="celebr-conditions">
+							<span>1) вхід у ігрову зону</span>
+							<span>2) необмежений час перебування</span>
+							<span>3) необмежений доступ до ігрової зони</span>
+							<span>*4) екскурсія</span> 
+							<span>*5) шоу програма</span>
+						</p>
+					</figcaption>
+					<a href="#calc" class="btn">Розрахувати вартість</a>
+				</figure>
+				<figure class="celebr-item">
+					<img src="img/photos/9.jpg" class="celebr-img">
+					<figcaption class="celebr-description">
+						<p class="celebr-header">День народження
+							<span>іменнинику вхід безкоштовний</span>
+						</p>
+						<p class="celebr-conditions">
+							<span>1) вхід у ігрову зону</span>
+							<span>2) необмежений час перебування</span>
+							<span>3) необмежений доступ до ігрової зони</span>
+							<span>*4) екскурсія</span> 
+							<span>*5) шоу програма</span>
+						</p>
+					</figcaption>
+					<a href="#calc" class="btn">Розрахувати вартість</a>
+				</figure>
+				<figure class="celebr-item">
+					<img src="img/photos/10.jpg" class="celebr-img">
+					<figcaption class="celebr-description">
+						<p class="celebr-header">Сімейний день
+							<span>знижки на квитки для родини</span>
+						</p>
+						<p class="celebr-conditions">
+							<span>1) вхід у ігрову зону</span>
+							<span>2) необмежений час перебування</span>
+							<span>3) необмежений доступ до ігрової зони</span>
+							<span>*4) екскурсія</span> 
+							<span>*5) шоу програма</span>
+						</p>
+					</figcaption>
+					<a href="#calc" class="btn">Розрахувати вартість</a>
+				</figure>
+			</div>
+		</div>
+<!-- /Celebration -->
+
+<!-- Calculator -->
+		<div class="section-wrp" id="calc">
+			<section id="cor">
+		    	<div class="wrap main-cal-box">
+		        <p class="tl">Розрахуйте свято за 5 кроків</p>
+		        <div class="calc-box show-box" id="b1">
+		            <div class="name">Оберіть подію, яку хочете провести в Лабораторії</div>
+		            <div class="intro">ціни оптимізовані для кожного свята</div>
+		            <label class="main-radio">
+		                <input type="radio" name="type" value="1" data-target="p1" data-value="День народження: іменинникам вхід безкоштовний">
+		                <div>
+		                    День народження
+		                    <span>іменинникам вхід безкоштовний</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="radio" name="type" value="0" data-target="p1" data-value="Сімейний день: знижки для родини до 160 грн">
+		                <div>
+		                    Сімейний день
+		                    <span>знижки для родини до 160 грн</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="radio" name="type" value="0" data-target="p1" data-value="День для компанії: шкільний клас, старша група садочку">
+		                <div>
+		                    День для компанії
+		                    <span>шкільний клас, старша група садочку</span>
+		                </div>
+		            </label>
+		        </div>
+
+		        <div class="calc-box clearfix" id="b2">
+		            <div class="name">Оберіть кількість гостей</div>
+		            <div class="intro">що більше людей, то нижча ціна</div>
+		            <div class="counter">
+		                <label>Діти</label>
+		                <span>від 160 грн<br/> до 14 років</span>
+		                <div class="count" data-price="160" data-type="children">
+		                    <span class="minus"></span>
+		                    <span class="value" id="children">0</span>
+		                    <span class="plus"></span>
+		                </div>
+		            </div>
+
+		            <div class="counter">
+		                <label>Дорослі</label>
+		                <span>від 160 грн</span>
+		                <div class="count" data-price="160" data-type="parent">
+		                    <span class="minus"></span>
+		                    <span class="value" id="parent">0</span>
+		                    <span class="plus"></span>
+		                </div>
+		            </div>
+		        </div>
+
+		        <div class="calc-box" id="b3">
+		            <div class="name"> Ваш аніматор</div>
+		            <div class="intro">професор проводить пізнавальні ігри та експерименти для дітей, ціна залежить від кількості людей</div>
+		            <label class="main-radio">
+		                <input type="radio" name="animator" value="1" data-target="p3" data-value="1 година: від 500 грн">
+		                <div>
+		                    1 година
+		                    <span> від 500 грн</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="radio" name="animator" value="2" data-target="p3" data-value="1,5 години: від 700 грн">
+		                <div>
+		                    1,5 години
+		                    <span>від 700 грн</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="radio" name="animator" value="0" data-target="p3" data-value="не потрібен">
+		                <div>
+		                    не потрібен
+		                    <span>&nbsp;</span>
+		                </div>
+		            </label>
+		        </div>
+
+		        <div class="calc-box" id="b4">
+		            <div class="name"> Ваша екскурсія</div>
+		            <div class="intro">вартість за екскурсію (не з людини), що більше людей, то нижча ціна</div>
+		            <label class="main-radio">
+		                <input type="radio" name="ex" value="1" data-target="p4" data-value="Ознайомча: проводить співробітник лабораторії
+		(від 250 грн)">
+		                <div>
+		                    Ознайомча
+		                    <span>проводить співробітник лабораторії<br/>
+		(від 250 грн)</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="radio" name="ex" value="2" data-target="p4" data-value="Із професором: проводить аніматор у костюмі
+		професора (від 250 грн)">
+		                <div>
+		                    Із професором
+		                    <span>проводить аніматор у костюмі<br/>
+		професора (від 250 грн)</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="radio" name="ex" value="0" data-target="p4" data-value="Без екскурсії">
+		                <div>
+		                    Без екскурсії
+		                    <span>діти самостійно оглядають лабораторію<br/>&nbsp;</span>
+		                </div>
+		            </label>
+		        </div>
+
+		        <div class="calc-box" id="b5">
+		            <div class="name"> Шоу-програма</div>
+		            <div class="intro">для організації шоу, попередьте нас за 2–3 дні, ціна за все шоу (не з людини)</div>
+		            <label class="main-radio">
+		                <input type="checkbox" name="shou" value="1" data-target="p5" data-value="Набір експериментів: 1000 грн">
+		                <div>
+		                    Набір експериментів
+		                    <span>1000 грн</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="checkbox" name="shou" value="2" data-target="p5" data-value="Сухий лід: 1000 грн">
+		                <div>
+		                    Сухий лід
+		                    <span>1000 грн</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="checkbox" name="shou" value="3" data-target="p5" data-value="Експерименти з рідким
+		                    азотом: 2500 грн">
+		                <div>
+		                    Експерименти з рідким
+		                    азотом
+		                    <span>2500 грн</span>
+		                </div>
+		            </label>
+
+		            <label class="main-radio">
+		                <input type="checkbox" name="shou" value="4" data-target="p5" data-value="Мильні бульбашки: 1000 грн">
+		                <div>
+		                    Мильні бульбашки
+		                    <span>1000 грн</span>
+		                </div>
+		            </label>
+		        </div>
+
+		        <div class="final-calc" id="b6">
+		            <div class="row clearfix">
+		                <div class="box-to-right" id="html">
+		                    <p id="p1">не обрано</p>
+		                    <p id="p2">Кількість гостей: <span id="c-children">0</span> дитячих, <span id="c-parent">0</span> дорослих</p>
+		                    <p id="p3">не обрано</p>
+		                    <p id="p4">не обрано</p>
+		                    <p id="p5">не обрано</p>
+
+		                    <div class="price">Сума: <span>0</span> грн</div>
+		                </div>
+
+		                <div class="box-to-right">
+		                    <form id="send-form" action="/send" method="post">
+								<input type="hidden" name="_csrf-frontend" value="8J1-VI_nT2_0oo93EE56iHuQKOw7QazUnrxZTOZ_otroUiTqN2f61xM9A0iGG4gA6KSkXkMvWFiTSM8Rz4FFVA==">                        
+								<input type="text" placeholder="Імя" required name="name">
+		                        <input type="text" placeholder="Телефон" required name="phone">
+		                        <input type="text" placeholder="Дата" required name="date">
+		                        <input type="hidden" value="" name="price" id="price">
+		                        <button>Замовити</button>
+		                    </form>                
+		                </div>
+		            </div>
+		        </div>
+
+		        <a href="#" data-toggle="prev" class="main-a a-prev">Назад</a>
+		        <a href="#" data-toggle="next" class="main-a a-next">Далі</a>
+
+		        <div class="step-line">
+		            <div class="line-active"></div>
+		            <div class="step active" data-size="8.3" data-show="#b1" data-num="1"><span>Подія</span></div>
+		            <div class="step" data-size="25.3" data-show="#b2" data-num="2"><span>Кількість гостей</div>
+		            <div class="step" data-size="41.3" data-show="#b3" data-num="3"><span>Аніматор</span></div>
+		            <div class="step" data-size="58.3" data-show="#b4" data-num="4"><span>Екскурсія</span></div>
+		            <div class="step" data-size="74.3" data-show="#b5" data-num="5"><span>Шоу</span></div>
+		            <div class="step" data-size="100" data-show="#b6" data-num="6"><span>Готово</span></div>
+		        </div>
+		    </div>
+		</section>
+<!-- /Calculator -->
+
+<!-- Calendar -->
+		<div class="section-wrp" id="calendar">
+			<h2 class="section-header">Шоу лабораторії</h2>
+			<div class="lab-show-wrp">
+				<figure class="lab-show">
+					<img src="img/photos/8.jpg">
+					<figcaption>Шоу з божевільним професором</figcaption>
+					<button type="button" class="btn modal-btn">Замовити квиток</button>
+				</figure>
+				<figure class="lab-show">
+					<img src="img/photos/9.jpg">
+					<figcaption>Шоу сухого льоду та рідкого азоту</figcaption>
+					<button type="button" class="btn modal-btn">Замовити квиток</button>
+				</figure>
+				<div class="modal-main">
+					<button type="button" class="fa fa-times modal-cross"></button>
+					<h2 class="section-header">Зв'яжіться з нами</h2>
+					<div class="modal-contact-wrp">
+					<form action="URL" method="post">
+						<input type="text" name="name" placeholder="Ім'я">
+						<input type="tel" name="telephone" placeholder="Телефон">
+						<input type="text" name="request" placeholder="">
+						<button type="submit" class="btn contact-btn">Відправити</button>
+					</form>
+					</div>
+				</div>
+				<div class="modal-overlay"></div>
+				</div>
+			</div>
+		</div>
+<!-- /Calendar -->
+
+<!-- Contact Us -->
+		<div class="section-wrp contact-section-wrp" id="contact">
+			<h2 class="section-header contact-header">Зв'яжіться з нами</h2>
+			<div class="contact-meta-wrp">
+				<div class="contact-wrp">
+					<form action="URL" method="post">
+						<input type="text" name="name" placeholder="Ім'я">
+						<input type="tel" name="telephone" placeholder="Телефон">
+						<input type="text" name="request" placeholder="Ваш запит">
+						<button type="submit" class="btn contact-btn">Відправити</button>
+					</form>
+				</div>
+				<p class="contact-wrp address">Контакти
+					<span>ТРЦ «DreamTown 2», атріум Італія,<br>
+					Київ, станції метро «Мінська» <br>
+					та «Героїв Дніпра» <br>
+					Оболонський проспект, 21б <br>
+					2-й поверх <br>
+					+380 99 289 14 14, +380 93 006 60 13.
+					</span>
+				</p>
+				<div class="contact-wrp contact-img"></div>
+			</div>
+			<div class="contact-map">
+				<iframe src="https://snazzymaps.com/embed/27443" width="100%" height="400px" style="border:none;"></iframe>
+			</div>
+		</div>
+<!-- /Contact Us -->
 	</div>
-	</div> -->
-	<script type="text/javascript" src="main.js"></script>
+	</div>
+<!-- Footer -->
+	<footer class="main-footer background-wrp">
+	<div class="content-wrp footer-content-wrp">
+		<p class="footer-copyrights">
+			2017 © Все права защищены
+		</p>
+		<p class="footer-social">
+			<a href="https://www.instagram.com/_crazyprofessor_/" target="_blank" class="social-icon fa fa-instagram"></a>
+			<a href="https://www.facebook.com/laboratoriacrazyprofessor/" target="_blank" class="social-icon fa fa-facebook"></a>
+			<a href="https://www.youtube.com/channel/UCjsLvbLA0BZ03pHrPQgk8Aw?app=desktop" target="_blank" class="social-icon fa fa-youtube"></a>
+		</p>
+		<a href="#" class="footer-develop" target="_blank">
+			Сайт разработан компанией <span>Disaychev</span>
+		</a>
+	</div>
+	</footer>
+<!-- /Footer -->
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
