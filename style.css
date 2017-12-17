@@ -583,7 +583,10 @@ button {
 @media all and (max-width: 959px) {
     body{
         font-size: 8px;
-    }
+	}
+	.desk-navbar_mail {
+		display: none;
+	}
     .main-title-full {
     	display: none;
     }
